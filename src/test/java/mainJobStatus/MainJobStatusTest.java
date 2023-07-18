@@ -36,12 +36,8 @@ public class MainJobStatusTest extends Browser{
 		jb1.verifMainJobStatusBtn();
 		Thread.sleep(2000);
 		jb2.verifyNewBtn();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 	}
-
-
 	
 	@Test( enabled =true)
 	public void data() throws Exception {
@@ -59,11 +55,7 @@ public class MainJobStatusTest extends Browser{
 			jb2.verifyBasicDetails(exec);
 		
 			System.out.println("*** JOB BOOKING DONE : "+exec+" ***");
-	
-	}
-	
-	}
-	
+	}}
 
 	@AfterMethod
 	
